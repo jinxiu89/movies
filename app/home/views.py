@@ -44,3 +44,8 @@ def user():
 @home.route('/user/pwd')
 def pwd():
     return render_template('home/pwd.html')
+
+
+@home.route('/animation/')
+def animation():
+    return render_template('common/animation.html')
