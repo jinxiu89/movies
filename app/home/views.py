@@ -31,6 +31,11 @@ def search():
     return render_template('home/search.html')
 
 
+@home.route('/play/')
+def play():
+    return render_template('home/play.html')
+
+
 @home.route('/register/')
 def register():
     return render_template('home/register.html')
@@ -44,6 +49,11 @@ def user():
 @home.route('/user/pwd')
 def pwd():
     return render_template('home/pwd.html')
+
+
+@home.route('/moviecol/')
+def moviecol():
+    return render_template('/home/moviecol.html')
 
 
 @home.route('/animation/')
